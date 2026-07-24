@@ -1,4 +1,4 @@
-.root { --ink:#f5f7ff; --paper:#030518; --muted:#7f9ab8; --line:#0b2a3a; --lime:#c9ff67; --neon:#54ffb7; --accent:#6fd4ff; }
+:root { --ink:#ffffff; --paper:#04122b; --muted:#7f9ab8; --line:#0b2a3a; --lime:#c9ff67; --neon:#54ffb7; --accent:#6fd4ff; }
 @font-face {
 	font-family: 'Matisse EB';
 	src: url('fonts/Times-New-Roman-MT-Std-Bold-Condensed.otf') format('opentype');
