@@ -7,7 +7,7 @@
     <title>Yanis Yvray — Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -31,19 +31,19 @@
 
       <section class="section" id="projets">
         <div class="section-heading"><p class="eyebrow">01 — Sélection</p><h2>Mes projets</h2></div>
-        <div class="projects-list">
-          <details class="project project-sun" open>
-            <summary><span class="project-number">01</span><span><span class="tag">WEB · 2026</span><strong>Nom du premier projet</strong></span><span class="project-toggle" aria-hidden="true">+</span></summary>
-            <div class="project-content"><p>Une courte présentation du problème résolu, de ce que tu as construit et des outils que tu as utilisés.</p><a href="#">Voir le projet <span>↗</span></a></div>
-          </details>
-          <details class="project project-sky">
-            <summary><span class="project-number">02</span><span><span class="tag">APPLICATION · 2025</span><strong>Nom du second projet</strong></span><span class="project-toggle" aria-hidden="true">+</span></summary>
-            <div class="project-content"><p>Décris ici ton projet en une ou deux phrases : l'idée, ton rôle et le résultat.</p><a href="#">Voir le projet <span>↗</span></a></div>
-          </details>
-          <details class="project project-coral">
-            <summary><span class="project-number">03</span><span><span class="tag">EXPÉRIMENTATION · 2025</span><strong>Nom du troisième projet</strong></span><span class="project-toggle" aria-hidden="true">+</span></summary>
-            <div class="project-content"><p>Décris ici ton projet en une ou deux phrases : l'idée, ton rôle et le résultat.</p><a href="#">Voir le projet <span>↗</span></a></div>
-          </details>
+        <div class="projects-grid">
+          <article class="project project-featured">
+            <div class="project-visual amber"><span>01</span><div class="shape shape-circle"></div></div>
+            <div class="project-meta"><div><p class="tag">WEB · 2026</p><h3>Nom du premier projet</h3><p>Une courte présentation du problème résolu et de ce que tu as construit.</p></div><a href="#" aria-label="Voir le projet Nom du premier projet">↗</a></div>
+          </article>
+          <article class="project">
+            <div class="project-visual blue"><span>02</span><div class="shape shape-bars"></div></div>
+            <div class="project-meta"><div><p class="tag">APPLICATION · 2025</p><h3>Nom du second projet</h3><p>Décris ici ton projet en une ou deux phrases.</p></div><a href="#" aria-label="Voir le second projet">↗</a></div>
+          </article>
+          <article class="project">
+            <div class="project-visual pink"><span>03</span><div class="shape shape-square"></div></div>
+            <div class="project-meta"><div><p class="tag">EXPÉRIMENTATION · 2025</p><h3>Nom du troisième projet</h3><p>Décris ici ton projet en une ou deux phrases.</p></div><a href="#" aria-label="Voir le troisième projet">↗</a></div>
+          </article>
         </div>
       </section>
 
@@ -56,14 +56,10 @@
         </div>
       </section>
 
-      <section class="contact section" id="apropos">
-        <div class="section-heading"><p class="eyebrow">03 — Me contacter</p><h2>Écrivez-moi</h2></div>
-        <p class="contact-intro">Pour une question, un projet ou simplement échanger.</p>
-        <div class="contact-list">
-          <a href="mailto:yanis.yvray@ensae.fr"><span>École</span><strong>yanis.yvray@ensae.fr</strong><b>↗</b></a>
-          <a href="mailto:ton.email.personnel@exemple.com"><span>Personnel</span><strong>ton.email.personnel@exemple.com</strong><b>↗</b></a>
-          <a href="mailto:ton.email.pro@exemple.com"><span>Professionnel</span><strong>ton.email.pro@exemple.com</strong><b>↗</b></a>
-        </div>
+      <section class="about" id="apropos">
+        <p class="eyebrow">03 — Me contacter</p>
+        <h2>Une idée ou une<br />opportunité ? <em>Parlons-en.</em></h2>
+        <a class="email" href="mailto:yanis.yvray@ensae.fr">yanis.yvray@ensae.fr <span>↗</span></a>
       </section>
     </main>
 
