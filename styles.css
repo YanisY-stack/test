@@ -1,4 +1,6 @@
+/* ==== Theme variables ==== */
 :root { --ink:#ffffff; --paper:#04122b; --muted:#7f9ab8; --line:#0b2a3a; --lime:#c9ff67; --neon:#ff4d6d; --neon-rgb:255,77,109; --accent:#ff8a9a; }
+/* ==== Fonts ==== */
 @font-face {
 	font-family: 'Matisse EB';
 	src: url('fonts/Times-New-Roman-MT-Std-Bold-Condensed.otf') format('opentype');
@@ -6,6 +8,7 @@
 	font-style: normal;
 	font-display: swap;
 }
+/* ==== Reset / Base ==== */
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body {
@@ -17,8 +20,8 @@ body {
 	font-family:'Matisse EB', 'Noto Serif JP', Georgia, serif;
 }
 body::after { content:""; position:fixed; inset:0; pointer-events:none; background-image:linear-gradient(transparent 50%, rgba(var(--neon-rgb),0.012) 50%), linear-gradient(90deg, transparent 50%, rgba(111,212,255,0.01) 50%); background-size:100% 24px, 24px 100%; mix-blend-mode:overlay; }
-a { color:inherit; text-decoration:none; }
 .site-header, footer { max-width:1240px; margin:auto; display:flex; align-items:center; justify-content:space-between; padding:26px 28px; }
+/* ==== Header / Navigation / Footer ==== */
 .site-header { font-size:14px; border-bottom:1px solid var(--line); }
 .logo { font-family:'Matisse EB', 'Noto Serif JP', Georgia, serif; font-weight:800; font-size:26px; letter-spacing:-.06em; text-transform:uppercase; color:var(--ink); }
 nav { display:flex; gap:26px; }
@@ -26,7 +29,13 @@ nav { display:flex; gap:26px; }
 nav a:hover, .cv-link:hover { color:var(--neon); transform:translateY(-1px); text-shadow:0 0 10px rgba(var(--neon-rgb),.12); }
 .cv-link { font-family:"DM Mono", monospace; font-size:12px; }
 
+/* Avatar / corner photo */
+.avatar { width:56px; height:56px; border-radius:50%; object-fit:cover; margin-right:12px; border:2px solid rgba(var(--neon-rgb),.18); box-shadow:0 6px 24px rgba(var(--neon-rgb),.12); transition:transform .18s ease, box-shadow .18s ease; }
+.avatar:hover, .avatar:focus { transform:translateY(-4px) scale(1.03); box-shadow:0 12px 40px rgba(var(--neon-rgb),.18); }
+@media (max-width:650px) { .avatar { width:44px; height:44px; margin-right:8px; } }
+
 .hero { min-height:680px; padding:130px 28px 80px; display:flex; flex-direction:column; align-items:flex-start; position:relative; overflow:hidden; }
+/* ==== Hero / Intro ==== */
 .hero::after, .hero::before { display:none !important; }
 .eyebrow,.tag { margin:0; font:600 11px "DM Mono", monospace; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); }
 h1,h2,h3,p { margin-top:0; }
