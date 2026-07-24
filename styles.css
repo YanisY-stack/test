@@ -35,10 +35,10 @@ nav a:hover, .cv-link:hover { color:var(--neon); transform:translateY(-1px); tex
 .avatar:hover, .avatar:focus { transform:translateY(-4px) scale(1.03); box-shadow:0 12px 40px rgba(var(--neon-rgb),.18); }
 @media (max-width:650px) { .avatar { width:44px; height:44px; margin-right:8px; } }
 
-..hero { min-height:680px; padding:130px 28px 80px; display:flex; justify-content:flex-start; align-items:flex-start; position:relative; overflow:hidden; gap:20px; }
+.hero { min-height:680px; padding:130px 28px 80px; display:flex; justify-content:flex-start; align-items:flex-start; position:relative; overflow:hidden; gap:20px; }
 .hero-copy { max-width:520px; }
 .hero-photo { align-self:flex-start; margin-left:-20px; }
-..hero-photo img { width:100%; max-width:420px; height:auto; border-radius:0; border:2px solid rgba(var(--neon-rgb),.18); box-shadow:0 24px 68px rgba(var(--neon-rgb),.15); }
+.hero-photo img { width:100%; max-width:420px; height:auto; border-radius:0; border:2px solid rgba(var(--neon-rgb),.18); box-shadow:0 24px 68px rgba(var(--neon-rgb),.15); }
 /* ==== Hero / Intro ==== */
 .hero::after, .hero::before { display:none !important; }
 .eyebrow,.tag { margin:0; font:600 11px "DM Mono", monospace; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); }
