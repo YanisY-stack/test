@@ -1,0 +1,19 @@
+/* Overrides to ensure consistent neon accent and logo styling */
+:root { --neon-rgb: 255,77,109; }
+.logo-y { display:inline-block; line-height:1; font-family: 'Matisse EB', 'Noto Serif JP', Georgia, serif; font-weight:800; font-size:26px; letter-spacing:-.06em; text-transform:uppercase; }
+.logo-y--white { color:var(--ink); }
+.logo-y--red { color:var(--neon); margin-left:6px; }
+
+/* Force project-number gradient and shadows to use neon */
+.project-number {
+  background: linear-gradient(180deg, var(--neon), var(--accent)) !important;
+  box-shadow: 0 6px 18px rgba(var(--neon-rgb), .06) !important;
+}
+
+.project[open] .project-toggle {
+  box-shadow: 0 10px 30px rgba(var(--neon-rgb), .12) !important;
+}
+
+.project-content {
+  border-left: 3px solid rgba(var(--neon-rgb), .08) !important;
+}
