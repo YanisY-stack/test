@@ -37,8 +37,8 @@ nav a:hover, .cv-link:hover { color:var(--neon); transform:translateY(-1px); tex
 
 .hero { min-height:680px; padding:130px 28px 80px; display:flex; justify-content:flex-start; align-items:flex-start; position:relative; overflow:hidden; gap:20px; }
 .hero-copy { max-width:520px; }
-.hero-photo { align-self:flex-start; margin-left:-10px; flex-shrink:0; }
-.hero-photo img { width:100%; max-width:320px; height:auto; border-radius:0; border:2px solid rgba(var(--neon-rgb),.18); box-shadow:0 24px 68px rgba(var(--neon-rgb),.15); }
+.hero-photo { align-self:flex-start; margin-left:0; flex-shrink:0; }
+.hero-photo img { width:100%; max-width:280px; height:auto; border-radius:0; border:2px solid rgba(var(--neon-rgb),.18); box-shadow:0 24px 68px rgba(var(--neon-rgb),.15); }
 /* ==== Hero / Intro ==== */
 .hero::after, .hero::before { display:none !important; }
 .eyebrow,.tag { margin:0; font:600 11px "DM Mono", monospace; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); }
